@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Description</title>
+    <link rel="icon" href="store_869636.png" type="image/x-icon" />
+    <link rel="stylesheet" href="desstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="desstyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="cart.css" />
+
+    <script src="description.js" defer></script>
+  </head>
+  <body>
+    <special-header></special-header>
+
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <h1>Description of Product</h1>
+    <div class="container">
+      <!-- Product details will be injected here -->
+    </div>
+    <div class="reviews-container">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <h3>Reviews</h3>
+      <div id="reviews">
+        <!-- Reviews will be injected here -->
+      </div>
+
+      <h3>Write A Review</h3>
+      <form class="review-form">
+        <label for="fname">Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your name"
+        /><br />
+
+        <div class="stars">
+          <i class="fa fa-star star" data-index="0"></i>
+          <i class="fa fa-star star" data-index="1"></i>
+          <i class="fa fa-star star" data-index="2"></i>
+          <i class="fa fa-star star" data-index="3"></i>
+          <i class="fa fa-star star" data-index="4"></i>
+
+          <br />
+          <br />
+        </div>
+        <label for="review">Review</label>
+        <textarea
+          id="review"
+          name="review"
+          placeholder="Write your review here"
+        ></textarea
+        ><br />
+
+        <button type="submit" class="submit-btn">Submit Review</button>
+      </form>
+    </div>
+    <script src="nav.js"></script>
+    <script src="category.js"></script>
+    <script src="shop.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
